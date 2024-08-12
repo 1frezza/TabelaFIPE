@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela FIPE</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <ul id="side-items">
+                <li class="side-item active"><a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="item_description">Home</span>
+                </a></li>
+                <li class="side-item"><a href="../consulta/consulta.html">
+                    <i class="fa-solid fa-car-side"></i>
+                    <span class="item_description">Consulta</span>
+                </a></li>  
+            </ul>
+            <button id="open_btn">
+                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <div id="logout">
+            <form action="../login/login.html" method="get">
+            <button id="logout_btn">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span class="item_description">Logout</span>
+            </button>
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Consulta de Preços de Carros</h1>
+        <p>Encontre facilmente o preço de veículos por marca, modelo e ano de fabricação.</p>
+        
+
+        <div id="dicas">
+            <h2>Dicas para Consulta</h2>
+            <div class="card">
+                <div class="card-header" onclick="toggleCardContent(this)">
+                    <h3>Dica 1: Como usar a ferramenta</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="card-content">
+                    <p>Para consultar o preço de um carro, comece digitando o nome da marca no campo de pesquisa. Em seguida, selecione o modelo desejado para visualizar o preço atual de acordo com a tabela FIPE.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" onclick="toggleCardContent(this)">
+                    <h3>Dica 2: Encontrando modelos específicos</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="card-content">
+                    <p>Se você não encontrar o modelo desejado imediatamente, tente digitar uma parte do nome do modelo no campo de pesquisa para filtrar as opções disponíveis.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+</body>
+<script src="../script.js"></script>
+</html>
